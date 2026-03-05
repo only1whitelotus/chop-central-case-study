@@ -37,12 +37,12 @@
         }
     </style>
     <!-- Chosen Palette: Warm Neutrals (bg-orange-50) with Chop Central Orange Accents (#ea580c), dark gray text for readability. -->
-    <!-- Application Structure Plan: The SPA is designed as an interactive case study/pitch deck. It flows logically from Executive Summary -> The Problem & Solution -> System Architecture & Roles -> Feature Deep Dive -> Data-Driven Impact. This structure allows users to understand the "Why" before exploring the "How" and the "Results". Interactive tabs (for Roles and Features) compress complex information into digestible, explorable chunks without overwhelming the user. Chart.js is used to simulate the impact data mentioned in the report to provide a visual anchor. -->
+    <!-- Application Structure Plan: The SPA is designed as an interactive case study/pitch deck. It flows logically from Executive Summary -> The Problem & Solution -> System Architecture & Roles -> Feature Deep Dive -> Data-Driven Impact. -->
     <!-- Visualization & Content Choices: 
          1. Problem/Solution: 2-column CSS Grid. Goal: Compare. Method: Side-by-side text cards. Justification: Shows direct mapping of ERMS fixes to old problems.
          2. RBAC Roles: Interactive CSS/JS Tabs. Goal: Organize. Method: Clickable role cards updating a central pane. Justification: Prevents text walls, encourages user discovery.
          3. Feature Breakdown: Vertical interactive accordion/list. Goal: Organize. Method: JS-driven detail toggles. Justification: Groups dense feature lists intuitively.
-         4. Impact Metrics: Chart.js Canvas (Donut & Bar). Goal: Inform/Compare. Method: Visual charts of simulated data based on report context (Payment reconciliation, efficiency). Justification: Fulfills the "Data-Driven Decisions" claim in the report visually. NO SVG used; icons are Unicode. -->
+         4. Impact Metrics: Chart.js Canvas (Donut & Bar). Goal: Inform/Compare. Method: Visual charts of simulated data based on report context. Justification: Fulfills the "Data-Driven Decisions" claim visually. NO SVG used; icons are Unicode. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 </head>
 <body class="bg-orange-50 text-gray-800 font-sans antialiased">
@@ -72,12 +72,20 @@
             <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Explore the architecture, features, and impact of the custom-built, cloud-native Progressive Web Application designed for food businesses and restaurants.
             </p>
-            <div class="inline-flex items-center justify-center bg-white border border-gray-200 rounded-full px-6 py-3 shadow-sm">
-                <span class="text-2xl mr-3">&#x1F468;&#x200D;&#x1F4BB;</span>
-                <div class="text-left">
-                    <p class="text-xs text-gray-400 font-bold uppercase">Product Designer & Developer</p>
-                    <p class="text-sm font-black text-gray-800">Akinola Akinjide &bull; March 2026</p>
+            
+            <div class="flex flex-col items-center space-y-6">
+                <div class="inline-flex items-center justify-center bg-white border border-gray-200 rounded-full px-6 py-3 shadow-sm">
+                    <span class="text-2xl mr-3">&#x1F468;&#x200D;&#x1F4BB;</span>
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400 font-bold uppercase">Product Designer & Developer</p>
+                        <p class="text-sm font-black text-gray-800">Akinola Akinjide &bull; March 2026</p>
+                    </div>
                 </div>
+
+                <!-- NEW DOWNLOAD PDF BUTTON -->
+                <a href="Chop_Central_ERMS_Documentation.pdf" download class="inline-flex items-center justify-center bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition-transform hover:-translate-y-1 shadow-lg shadow-gray-300">
+                    <span class="text-xl mr-2">&#x1F4E5;</span> Download Full PDF Report
+                </a>
             </div>
         </section>
 
